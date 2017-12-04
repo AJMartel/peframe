@@ -24,42 +24,6 @@ Output example
 
 `Short data example <http://pastebin.com/hrKNtLMN>`_ | `Full data (JSON) example <http://pastebin.com/tpmdsibd/>`_
 
-Simple schema
--------------
-
-.. code-block::
-
-	{
-		"peframe_ver": string,
-		"file_type": string,
-		"file_name": string,
-		"file_size": int,
-		"hash": dict,
-		"file_found": dict,
-		"url_found": list,
-		"ip_found": list,
-		"virustotal": dict,
-		"fuzzing": list,
-		"pe_info": {
-			"compile_time": string, 
-			"dll": bool,
-			"sections_number": int,
-			"sections_info": list,
-			"xor_info": dict,
-			"detected": list,
-			"directories": list,
-			"sign_info": dict,
-			"packer_info": list,
-			"mutex_info": list,
-			"antidbg_info": list,
-			"antivm_info": list,
-			"apialert_info": list,
-			"meta_info": dict,
-			"import_function": list,
-			"export_function": list,
-			"resources_info": list
-		}
-	}
 
 Install
 -------
@@ -70,7 +34,7 @@ Install
 
     Python 2.7.x
 
-**Install**
+**How to**
 
 To install from PyPI:
 
@@ -88,6 +52,9 @@ To install from source:
 
    # python setup.py install
 
+**Note**
+
+For Windows environment, you need to follow the instructions here: https://github.com/ahupp/python-magic#dependencies (Thanks to `Biagio <https://www.linkedin.com/in/biagiotagliaferro/>`_)
 
 Talk about...
 -------------
@@ -97,6 +64,7 @@ Talk about...
   * `Automated Static and Dynamic Analysis of Malware <http://www.cyberdefensemagazine.com/newsletters/august-2013/index.html#p=26>`_ *(Cyber Defence Magazine, Andrew Browne, Director Malware Lab Lavasoft).*
   * `Suspicious File Analysis with PEframe <https://eforensicsmag.com/download/malware-analysis/>`_ *(eForensics Magazine, Chintan Gurjar)*
   * `Bulletin CERTFR-2014-ACT-030 <http://cert.ssi.gouv.fr/site/CERTFR-2014-ACT-030/index.html>`_ *(PEframe was mentioned in the security bulletin by CERT FR)*
+  * `Infosec CERT-PA Malware Analysis <https://infosec.cert-pa.it/analyze/submission.html>`_ *(PEframe is used in the malware analysis engine of Infosec project, developed by Davide Baglieri)*
 
 Other
 -----
